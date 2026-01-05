@@ -39,8 +39,8 @@ const Banner = () => {
         currentRouteName={currentRouteName}
       /> */}
       <BannerBtn
-        title="+6589446568"
-        href="tel:+6589446568"
+        title="+6562397850 or email info@tradluxe.com"
+        href="tel:+6562397850"
         bgColor1="rgba(60, 60, 60, 0.60)"
         bgColor2="rgb(60, 60, 60)"
         logo={PhoneLogo}

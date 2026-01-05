@@ -37,7 +37,7 @@ const ContactPage = () => {
                     icon={CallIcon}
                     title="Call Us"
                     href="tel"
-                    content="+6589446568"
+                    content="+6562397850"
                   />
                   <ContactCard
                     icon={MailIcon}
