@@ -2,28 +2,17 @@ import {
   Box,
   Container,
   Divider,
-  Grid,
   IconButton,
-  InputAdornment,
   Link,
   Tooltip,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
-import React, { useState } from "react";
-import { CustomTextFieldRounded } from "../../components/customtextfield";
+import React from "react";
 import BrandFb from "../../assets/icons/brand-facebook.svg";
 import BrandInsta from "../../assets/icons/brand-instagram.svg";
-// import BrandX from "../../assets/icons/brand-x.svg";
-// import BrandLinkedIn from "../../assets/icons/brand-linkedIn.svg";
 import Copyright from "../../assets/icons/copyright.svg";
-import ArrowRight from "../../assets/icons/arrow-top.svg";
-import MailIcon from "../../assets/icons/mail-icon.svg";
-import toast from "react-hot-toast";
 
 const Footer = () => {
-  const tabMatches = useMediaQuery("(min-width:900px)");
-
   const icons = [
     {
       icon: <img src={BrandFb} alt="facebook" width={30} height={30} />,
@@ -35,121 +24,11 @@ const Footer = () => {
       link: "https://www.instagram.com/TradluxeSingapore/",
       tooltip: "Instagram",
     },
-    // {
-    //   icon: <img src={BrandX} alt="x" width={30} height={30} />,
-    //   link: "https://www.facebook.com/TradluxeSingapore",
-    //   tooltip: "X",
-    // },
-    // {
-    //   icon: <img src={BrandLinkedIn} alt="linkedin" width={30} height={30} />,
-    //   link: "https://www.facebook.com/TradluxeSingapore",
-    //   tooltip: "Linkedin",
-    // },
   ];
-
-  const [email, setEmail] = useState("");
-
-  const addEmail = async () => {
-    // setIsLoading(true);
-    try {
-      if (email === "") {
-        toast.error("Please fill in the email");
-        return;
-      }
-
-      const body = {
-        fields: {
-          email: email,
-        },
-      };
-
-      await fetch("https://api.airtable.com/v0/appwAanLaXy2ibHUU/newsletter", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_AIRTABLE_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body), // Convert the body to a JSON string
-      });
-
-      toast.success("We have added the your email.");
-      // setIsLoading(false);
-    } catch (err) {
-      console.log(err);
-      toast.error("Oops ! Something wrong, Try again later !");
-      // setIsLoading(false);
-    }
-  };
 
   return (
     <>
       <Container sx={{ mt: 8, pb: 5 }} data-aos="fade-up">
-        <Grid container>
-          <Grid item md={6} xs={12}>
-            <Typography
-              component={"h1"}
-              sx={{
-                color: "#0F0F0F",
-                fontFamily: "'Playfair Display Variable', serif",
-                fontSize: "32px",
-                fontWeight: 400,
-                lineHeight: "130%",
-              }}
-            >
-              Get Our Latest
-            </Typography>
-
-            <Typography
-              component={"h1"}
-              sx={{
-                color: "#0F0F0F",
-                fontFamily: "'Playfair Display Variable', serif",
-                fontSize: "48px",
-                fontWeight: 400,
-                lineHeight: "130%",
-              }}
-            >
-              News & Updates
-            </Typography>
-          </Grid>
-          <Grid item md={6} xs={12} sx={{ mt: tabMatches ? 0 : 5 }}>
-            <CustomTextFieldRounded
-              size="small"
-              color="secondary"
-              fullWidth
-              placeholder="Enter email address"
-              type="email"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <img src={MailIcon} alt="mail" height={16} width={16} />
-                  </InputAdornment>
-                ),
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton
-                      sx={{
-                        background:
-                          "linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(94deg, #ABABAB -8.85%, #B7B7B7 32.41%, #EDEDED 56.97%, #B2B2B2 76.57%, #797979 103.05%)",
-                      }}
-                      onClick={() => addEmail()}
-                      aria-label="button"
-                    >
-                      <img
-                        src={ArrowRight}
-                        alt="send-icon"
-                        height={20}
-                        width={20}
-                      />
-                    </IconButton>
-                  </InputAdornment>
-                ),
-              }}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Grid>
-        </Grid>
         <Divider
           component="div"
           role="presentation"
