@@ -1,1 +1,0 @@
-import{j as o,v as s}from"./index-D0swOnu1.js";const t=()=>o.jsx(s,{sx:{mt:4}});export{t as C};
