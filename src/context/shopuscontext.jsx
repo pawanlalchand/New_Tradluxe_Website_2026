@@ -7,15 +7,15 @@ import Img3 from "../assets/stores/amazon.svg";
 // import Img4 from "../assets/stores/opentaste.svg";
 import Img5 from "../assets/stores/redmart.svg";
 
-import Img6 from "../assets/stores/fair price.svg";
-import Img7 from "../assets/stores/cs fresh.svg";
-import Img8 from "../assets/stores/market place.svg";
+import Img6 from "../assets/stores/fair_price.svg";
+import Img7 from "../assets/stores/cs_fresh.svg";
+import Img8 from "../assets/stores/market_place.svg";
 import Img9 from "../assets/stores/mustafa.svg";
 import Img10 from "../assets/stores/setan.svg";
 
 import Img11 from "../assets/stores/ryan.svg";
-// import Img12 from "../assets/stores/new luncher.svg";
-// import Img13 from "../assets/stores/keep it fresh.svg";
+// import Img12 from "../assets/stores/new_luncher.svg";
+// import Img13 from "../assets/stores/keep_it_fresh.svg";
 import Img13 from "../assets/stores/beepbeep.svg";
 import Img14 from "../assets/stores/butcher_dog.svg";
 import Img15 from "../assets/stores/food-joy.svg";
