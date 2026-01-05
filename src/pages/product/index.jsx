@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { BrandsContext } from "../../context/BrandsContext";
-import ProductsBreadCrumbs from "./components/BreadCrumbs";
-import CustomToolbar from "../../components/CustomToolbar";
+import { BrandsContext } from "../../context/brandscontext";
+import ProductsBreadCrumbs from "./components/breadcrumbs";
+import CustomToolbar from "../../components/customtoolbar";
 
 const Product = () => {
   const { id } = useParams();

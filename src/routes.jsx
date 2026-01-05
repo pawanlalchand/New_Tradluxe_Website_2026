@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import Layout from "./layout/Layout";
+import Layout from "./layout/layout";
 import { ProgressBar } from "react-loader-spinner";
 import { Box } from "@mui/material";
 
@@ -40,7 +40,7 @@ const AboutPage = Loadable(lazy(() => import("./pages/about")));
 const ProductsPage = Loadable(lazy(() => import("./pages/products")));
 const ProductPage = Loadable(lazy(() => import("./pages/product")));
 const ContactPage = Loadable(lazy(() => import("./pages/contact")));
-const Error404 = Loadable(lazy(() => import("./pages/others/Error404")));
+const Error404 = Loadable(lazy(() => import("./pages/others/error404")));
 
 const routes = [
   {

@@ -5,8 +5,8 @@ import Logo from "../../assets/logo/logo.svg";
 import AboutInfo from "../../assets/images/about-info.webp";
 // import CustomTitle from "../../components/CustomTitle";
 // import AboutProduct from "../../assets/images/about-product.webp";
-import { CustomAboutDivider } from "../../components/CustomDividers";
-import CustomToolbar from "../../components/CustomToolbar";
+import { CustomAboutDivider } from "../../components/customdividers";
+import CustomToolbar from "../../components/customtoolbar";
 import MissionImg from "../../assets/icons/mission.svg";
 import ValuesImg from "../../assets/icons/values.svg";
 

@@ -8,11 +8,11 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import { CustomTextField } from "../../components/CustomTextField";
+import { CustomTextField } from "../../components/customtextfield";
 import ContactBg from "../../assets/images/contact.webp";
 import CallIcon from "../../assets/icons/phone.svg";
 import MailIcon from "../../assets/icons/mail.svg";
-import CustomToolbar from "../../components/CustomToolbar";
+import CustomToolbar from "../../components/customtoolbar";
 import toast from "react-hot-toast";
 
 const ContactPage = () => {

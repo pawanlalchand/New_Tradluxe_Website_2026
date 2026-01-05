@@ -7,9 +7,9 @@ import Img3 from "../assets/stores/amazon.svg";
 // import Img4 from "../assets/stores/opentaste.svg";
 import Img5 from "../assets/stores/redmart.svg";
 
-import Img6 from "../assets/stores/fair price.svg";
-import Img7 from "../assets/stores/cs fresh.svg";
-import Img8 from "../assets/stores/market place.svg";
+import Img6 from "../assets/stores/fair_price.svg";
+import Img7 from "../assets/stores/cs_fresh.svg";
+import Img8 from "../assets/stores/market_place.svg";
 import Img9 from "../assets/stores/mustafa.svg";
 import Img10 from "../assets/stores/setan.svg";
 

@@ -7,7 +7,7 @@ import {
   secondary,
   success,
   warning,
-} from "./themeColors";
+} from "./themecolors";
 const fontSize = 14;
 
 const THEMES = {

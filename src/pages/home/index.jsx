@@ -7,14 +7,14 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import BrandContainer from "./components/BrandContainer";
-import FindUs from "./components/FindUs";
-import { BrandsContext } from "../../context/BrandsContext";
+import BrandContainer from "./components/brandcontainer";
+import FindUs from "./components/findus";
+import { BrandsContext } from "../../context/brandscontext";
 // import HeaderImg from "../../assets/images/header-img.webp";
 import HeaderImg from "../../assets/images/header.png";
 import ArrowHead from "../../assets/icons/arrow-head.svg";
 import TradLuxe from "../../assets/logo/tradlogo.svg";
-import CustomTitle from "../../components/CustomTitle";
+import CustomTitle from "../../components/customtitle";
 
 const HomePage = () => {
   const [brands] = useContext(BrandsContext);

@@ -10,9 +10,9 @@ import {
 import "./styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CustomScrollToTop from "./components/CustomScrollToTop";
+import CustomScrollToTop from "./components/customscrolltotop";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "./pages/others/Errorfallback";
+import ErrorFallback from "./pages/others/errorfallback";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {

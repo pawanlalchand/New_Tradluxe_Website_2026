@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
-import { BrandsContext } from "../../context/BrandsContext";
-import BrandContainer from "./components/BrandContainer";
+import { BrandsContext } from "../../context/brandscontext";
+import BrandContainer from "./components/brandcontainer";
 import AboutBg from "../../assets/images/about-bg.webp";
-import CustomToolbar from "../../components/CustomToolbar";
+import CustomToolbar from "../../components/customtoolbar";
 
 const ProductPage = () => {
   const [brands] = useContext(BrandsContext);

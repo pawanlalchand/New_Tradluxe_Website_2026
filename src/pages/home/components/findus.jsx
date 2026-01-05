@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { ShopUsContext } from "../../../context/ShopUsContext";
+import { ShopUsContext } from "../../../context/shopuscontext";
 // import { Link } from "react-router-dom";
 
 const FindUs = () => {
