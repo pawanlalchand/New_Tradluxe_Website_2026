@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Variable", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.brand-container {
+  height: 367px;
+  width: 400px;
+  display: flex;
+  transition: all 0.25s ease-in-out;
+}
+.brand-container--content {
+  display: flex;
+  gap: 14px;
+  transition: all 0.25s ease-in-out;
+}
+.brand-container--content h2 {
+  color: #f0f0f0;
+  font-family: "Playfair Display Variable", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.15px;
+}
+@media screen and (max-width: 900px) {
+  .brand-container--mobile {
+    height: 210px;
+    width: 200px;
+  }
+  .brand-container--mobile .brand-container--content {
+    align-items: flex-end;
+  }
+}
+.brand-container--product {
+  width: 100%;
+}
+
+.active {
+  text-decoration: underline;
+}
+.active button {
+  font-weight: 700;
+}
+
+.MuiBreadcrumbs-separator {
+  color: #000;
+}
+
+@keyframes page-fade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.page-fade {
+  animation: page-fade 0.2s;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}/*# sourceMappingURL=style.css.map */
